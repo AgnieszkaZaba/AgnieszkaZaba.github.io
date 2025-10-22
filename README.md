@@ -1,5 +1,22 @@
-Agnieszka Żaba
+## Hi! I'm Aga :frog:
+I am a PhD student in the [Environmental Physics Group](https://zfs.agh.edu.pl/en) at [AGH University of Krakow](https://www.fis.agh.edu.pl/en) 🇵🇱.\
+My research focuses on cloud microphysics. ☁️💧⚛️ 
 
-Pracowniczka na Akademii Górniczo-Hutniczej im. Stanisława Staszica w Krakowie, na Wydziale Informatyki i Fizyki Stosowanej 
-Doktorantka w Szkole Doktorskiej AGH w dziedzinie Nauki Fizyczne
-Członkini Zespołu Fizyki Środowiska na AGH oraz grupy open-atmos.
+🇵🇱: Agnieszka Żaba doktorantka i pracowniczka 
+na Wydziale Fiziki i Informatyki Stosowanej 
+w Zespole Fizyki Środowisk (AGH).
+
+&nbsp;
+
+
+💬 You can find my talks in [here](https://github.com/AgnieszkaZaba/talks)
+
+❓ Do you have any questions for me? Or answers?\
+🤷🏾 Do you need a little help? Or want to help me? --- just send a message!
+
+I'm trying to do my best :)
+
+Contact me:
+`azaba@agh.edu.pl` or §
+`zabcia.aga@gmail.com`
+
