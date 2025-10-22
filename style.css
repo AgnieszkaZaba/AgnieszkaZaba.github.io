@@ -147,33 +147,33 @@ body.light-mode {
 
 
 
-/* Dark mode: invert top nav and text */
-body:not(.light-mode) header {
-  background-color: rgba(1, 25, 7, 0.89); /* dark nav bar (nav bar already dark) */
-}
+/*!* Dark mode: invert top nav and text *!*/
+/*body:not(.light-mode) header {*/
+/*  background-color: rgba(1, 25, 7, 0.89); !* dark nav bar (nav bar already dark) *!*/
+/*}*/
 
-body:not(.light-mode) .topnav a {
-  color: white;
-}
+/*body:not(.light-mode) .topnav a {*/
+/*  color: white;*/
+/*}*/
 
-body:not(.light-mode) {
-  background-color: rgba(1, 25, 7, 0.89);
-  color: #787878;
-}
+/*body:not(.light-mode) {*/
+/*  background-color: rgba(1, 25, 7, 0.89);*/
+/*  color: #787878;*/
+/*}*/
 
-body:not(.light-mode) .sidebar {
-  background-color: rgba(1, 25, 7, 0.89);
-  color: #787878;
-}
+/*body:not(.light-mode) .sidebar {*/
+/*  background-color: rgba(1, 25, 7, 0.89);*/
+/*  color: #787878;*/
+/*}*/
 
-body:not(.light-mode) .contact-info p,
-body:not(.light-mode) .contact-info a {
-  color: #787878;
-}
+/*body:not(.light-mode) .contact-info p,*/
+/*body:not(.light-mode) .contact-info a {*/
+/*  color: #787878;*/
+/*}*/
 
-body:not(.light-mode) .profile-pic {
-  border-color: #787878;
-}
+/*body:not(.light-mode) .profile-pic {*/
+/*  border-color: #787878;*/
+/*}*/
 
 /* Hide sidebar by default on mobile */
 @media (max-width: 768px) {
