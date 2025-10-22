@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Agnieszka Żaba AGH</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header>
+    <nav class="topnav">
+        <div class="logos"><a href="https://www.agh.edu.pl">
+            <img
+                    src="img/Znak_graficzny_AGH.svg" alt="logo agh"
+                    class="shadow-custom first-logo" height="60"></a>
+            <a href="https://www.fis.agh.edu.pl"> <img
+                    src="img/logo_fis.png" alt="logo wfis"
+                    class="shadow-custom d-none d-md-inline" height="60"> </a>
+        <a class="brand-name shadow-custom" href="/"><img src="img/logo_zfs.svg" alt="logo zfs" height="60"></a> </div>
+        <a href="#home">Agnieszka Żaba - strona domowa </a>
+<!--        <a href="#classes">Zajęcia</a>-->
+        <!--&lt;!&ndash;        <a href="#projects">Projects</a>&ndash;&gt;-->
+        <!--          <a href="#organisations"></a>-->
+        <!--        <a href="#contact">Kontakt</a>-->
+
+        <!--        <button id="menuToggle" aria-label="Toggle menu" class="menu-toggle">☰</button>-->
+        <!--        <button class="theme-icon" id="themeToggle" title="Toggle Dark/Light Mode">🌙</button>-->
+    </nav>
+</header>
+
+
+<!-- Page Container -->
+<div class="container">
+    <!-- Sidebar with Photo and Contact Info -->
+    <aside class="sidebar">
+        <img src="img/AgnieszkaZaba.png" alt="AgnieszkaZaba" class="profile-pic"/>
+        <div class="contact-info">
+            <p><strong>Agnieszka Żaba</strong></p>
+            <p><a href="mailto:azaba@agh.edu.pl">azaba@agh.edu.pl</a></p>
+            <p><a href="https://github.com/AgnieszkaZaba" target="_blank">GitHub: AgnieszkaZaba</a></p>
+            <p><a href="https://www.linkedin.com/in/agnieszka-%C5%BCaba-798742130/" target="_blank">LinkedIn profile</a>
+            </p>
+            <p><a href="https://skos.agh.edu.pl/osoba/agnieszka-barbara-zaba-10747.html">SkOs AGH</a></p>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="content">
+        <section class="introduction">
+
+            <p>Pracowniczka na Akademii Górniczo-Hutniczej AGH na Wydziale Fizyki i Informatyki Stosowanej</p>
+            <p>Doktorantka w dziedzinie Nauk Fizycznych w Szkole Doktorskiej AGH</p>
+        </section>
+        <!-- Classes Section -->
+        <section id="classes">
+            <h2>Zajęcia w semestrze zimowym 2025/2026</h2>
+
+            <!-- Class 1 -->
+            <article id="class1">
+                <h3>Modelowanie Układów Przepływowych</h3>
+                <p>Ćwiczenia laboratoryjne; Pon 10:30 - 12:45; D-10 30a</p>
+                <!--          <h3>Materials</h3>-->
+                <!--          <ul>-->
+                <!--            <li><a href="materials/Intro_to_AI_Syllabus.pdf" download>Download syllabus (PDF)</a></li>-->
+                <!--            <li><a href="materials/Intro_to_AI_Lecture1.pdf" download>Lecture 1 slides (PDF)</a></li>-->
+                <!--          </ul>-->
+            </article>
+
+            <!-- Class 2 -->
+            <article id="class2">
+                <h3>Modelowanie Procesów Transportu w Środowisku</h3>
+                <p>Ćwiczenia laboratoryjne; Czw 11:30 - 13:45; D-7 327</p>
+                <!--          <h3>Materials</h3>-->
+                <!--          <ul>-->
+                <!--            <li><a href="materials/Machine_Learning_Syllabus.pdf" download>Download syllabus (PDF)</a></li>-->
+                <!--            <li><a href="materials/Machine_Learning_Lecture1.pdf" download>Lecture 1 slides (PDF)</a></li>-->
+                <!--          </ul>-->
+            </article>
+        </section>
+        <section id="previous-classes">
+            <h2>Archiwum materiałów</h2>
+            <article id="class-24">
+                <h3>Materiały z zajęć</h3>
+                          <ul>
+                            <li><a href="materials/PTwŚ_labs.pdf" download>Modelowanie Procesów Transportu w Środowisku 2024 - slajdy</a></li>
+                          </ul>
+            </article>
+
+        </section>
+
+        <!--      &lt;!&ndash; Projects Section &ndash;&gt;-->
+        <!--      <section id="projects">-->
+        <!--        <h1>Research Projects</h1>-->
+        <!--        <ul>-->
+        <!--          <li>Project A: AI for Social Good</li>-->
+        <!--          <li>Project B: Deep Learning Optimization</li>-->
+        <!--            <p>lorem kjdfhkhwdkfndsjkbc kskfdhjsdkbf skfhlakfdlkashdfqpqowodskpqe qpweqwoyrfioewrnas kjdfhkhwdkfndsjkbc kskfdhjsdkbf skfhlakfdlkashdfqpqowodskpqekjdfhkhwdkfndsjkbc kskfdhjsdkbf skfhlakfdlkashdfqpqowodskpqekjdfhkhwdkfndsjkbc kskfdhjsdkbf skfhlakfdlkashdfqpqowodskpqex</p>-->
+        <!--        </ul>-->
+        <!--      </section>-->
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Informacje</h2>
+            <p> mgr Agnieszka Żaba</p>
+            <p> azaba@agh.edu.pl</p>
+            <p><strong>Pokój:</strong> 7, D-10</p>
+            <p><strong>Konsultacje:</strong> Śr 11:30 - 13:00</p>
+        </section>
+    </main>
+</div>
+
+<!-- JavaScript -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const themeToggleBtn = document.getElementById("themeToggle");
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem("darkMode");
+        if (savedTheme === "false") {
+            document.body.classList.add("light-mode");
+            themeToggleBtn.textContent = "🌙";
+        } else {
+            themeToggleBtn.textContent = "🔆";
+        }
+
+        // Toggle theme
+        themeToggleBtn.addEventListener("click", () => {
+            const isLight = document.body.classList.toggle("light-mode");
+            localStorage.setItem("darkMode", !isLight);
+            themeToggleBtn.textContent = isLight ? "🌙" : "🔆";
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.getElementById("menuToggle");
+        const sidebar = document.querySelector(".sidebar");
+        const body = document.body;
+
+        menuToggle.addEventListener("click", () => {
+            sidebar.classList.toggle("show");
+            body.classList.toggle("menu-open");
+        });
+
+        // Optional: close sidebar clicking outside
+        body.addEventListener("click", (e) => {
+            if (
+                !sidebar.contains(e.target) &&
+                !menuToggle.contains(e.target) &&
+                sidebar.classList.contains("show")
+            ) {
+                sidebar.classList.remove("show");
+                body.classList.remove("menu-open");
+            }
+        });
+    });
+
+</script>
+
+</body>
+</html>
