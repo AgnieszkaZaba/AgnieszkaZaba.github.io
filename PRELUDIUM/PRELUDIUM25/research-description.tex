@@ -123,6 +123,18 @@ FIBON - Fractionation of Isotopes with BOlin Number
 BINARY, BOUNDARY
 Bolin number 
 
+\section{Student oportunity}
+In the grant I would be happy to have a co-investigator. 
+Student during Bachelor or Masters - I don't have requirements here.
+It should be good enough for the student to have possibility to progress their thesis.
+The studies must be in one of the following topics: physics, computer sciences, mathematics.
+The responsibility would be a creation of the simple (but not trivial) model contained in one notebook 
+which will be sufficient to simulate isotopic composition.
+Programming abilities needed.
+Target programming language: Python, Julia. 
+Maybe with visualisations? 
+
+
 %----------------------------------------------------%
 %       REMEMBER!!!
 %----------------------------------------------------%
@@ -321,24 +333,30 @@ scientific goal of the project (description of the problem to be solved, researc
 
 % Meaning of isotopologue studies in the Earth sciences including atmospheric sciences and Earth system science.
 % I could mention here also climatology and geochemistry/geophysics
-Water stable isotopologues serve as the natural tracers in the global hydrological cycles of the Earth.
+Water stable isotopologues serve as the natural tracers in the global hydrological
+cycles of the Earth.
 
 % From chat - introduction:
-The isotopic composition of atmospheric water constitutes one of the most informative tracers of processes occurring
-within the Earth system.
-Stable water isotopes are widely used in atmospheric sciences, climatology, hydrology, and geochemistry
+The isotopic composition of atmospheric water constitutes one of the most informative
+tracers of processes occurring within the Earth system.
+Stable water isotopes are widely used in atmospheric sciences, climatology, and hydrology
 to investigate moisture sources, transport pathways, cloud microphysics,
 and interactions between the atmosphere and the hydrological cycle.
-The interpretation of isotopic observations relies on an accurate understanding of isotopic fractionation
-processes governing the evolution of water vapor and liquid water in natural environments.
+The interpretation of isotopic observations relies on an accurate understanding
+of isotopic fractionation processes governing the evolution of water vapor
+and liquid water in natural environments.
 
-The primary objective of the proposed project is to develop a mathematically rigorous and physically consistent
-framework describing isotopic fractionation during diffusional processes involving stable water isotopes.
-The project aims to formulate, analyze, and implement a process-based model capable of reproducing
+The primary objective of the proposed project is to develop a mathematically rigorous
+and physically consistent
+framework describing isotopic fractionation during diffusional processes
+involving stable water isotopes.
+The project aims to formulate, analyze, and implement a process-based model capable
+of reproducing
 the evolution of isotopic composition in water droplets and the surrounding environment under
 varying thermodynamic conditions.
 
-A further objective is to evaluate the predictive capability of the developed framework through systematic
+A further objective is to evaluate the predictive capability
+of the developed framework through systematic
 comparison with experimental and observational datasets.
 By confronting theoretical predictions with measurements, the project will assess the validity
 of current assumptions regarding kinetic fractionation.
@@ -415,7 +433,7 @@ The proposed project addresses this gap by developing a mathematically
 rigorous isotope-enabled super-droplet framework for mixed-phase clouds,
 bridging isotope process modeling and particle-resolved cloud microphysics.
 
-Stable isotopes of water (^1H^2H^16O, ^1H^1H^18O, ^1H^1H^17O and related isotopologues)
+Stable isotopes of water 
 provide unique information on cloud formation, phase transitions, and atmospheric moisture transport.
 Measurements of isotopic composition in vapor, cloud water, precipitation and ice crystals
 have become an important tool for investigating microphysical processes that cannot be directly observed.
@@ -464,6 +482,11 @@ of PySDM that allows simulation of stable water isotopes in particle-resolved cl
 including liquid-water and ice processes and simultaneous treatment of multiple isotopes.
 
 
+\subsection{
+my previous work on the isotopes
+}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 3. RESEARCH CONCEPT AND WORK PLAN
@@ -482,7 +505,8 @@ Tasks/objectives:
     \item\label{itm-models} \color{red} Comparison with other models (here possibility to make collaborations)
 \end{enumerate}
 
-Ad.~\ref{itm-maths}: Mathematical description of the assumptions of the models with approximation analysis
+\subsection{Task: \ref{itm-maths}}
+Mathematical description of the assumptions of the models with approximation analysis
 Verification of mathematical consistency including dimensional analysis, conservation laws.
 Behavior analysis: What happens when approaching RH=1?
 What happens when isotopic composition of the phases is achieved?
@@ -499,9 +523,11 @@ Does your equation reduce to standard Rayleigh behavior in the appropriate limit
 Does it reproduce equilibrium fractionation when diffusion effects vanish?
 Does it recover kinetic fractionation formulas when cloud microphysics dominates?
 
-Ad.~\ref{itm-code}:
-Preliminary: Implementations in PySDM (as stated in the previous NCN grant) {\color{blue}Q: should I mention it here?} 
-In PySDM - extending code with water-ice interactions.
+\subsection{Task: \ref{itm-code}}
+Preliminary: The implementation will be developed within the established PySDM framework, ensuring
+compatibility with existing cloud microphysics modules and facilitating reuse by the community.
+he PySDM environment will serve as the primary computational framework, extended here to include water–ice interactions and multi-isotopologue tracking.
+
 Adding multiple isotopes analysis in the same time.
 RSE: preparing Jupyter Notebook in Python and Julia self-containing all the code needed
 to run simulation with isotopic fractionation.
@@ -519,7 +545,7 @@ Methods: ...
 
 
 
-Ad.~\ref{itm-data}
+\subsection{Task: \ref{itm-data}}
 Comparison with the data from CAESAR Campaign with collaboration with Elise Rosky.
 Preparation for the specific scenario.
 Measurements consist of temperature, altitude, isotopic composition of liquid and vapor, droplet size distribution.
@@ -609,132 +635,133 @@ Present any pilot studies, preliminary data, proofs of concept, or previous work
 
     {\color{red}TODO: plot}
 \begin{figure}
-    \includesvg{B}
+    \includegraphics[width=\textwidth]{Bo}
 \end{figure}
-\subsection{Milestones}
 
-\begin{table}[H]
-\centering
-\begin{tabular}{p{2cm} p{9cm} p{2cm}}
-\toprule
-Milestone & Description & Month \\
-\midrule
-M1 &  &  \\
-M2 &  &  \\
-M3 &  &  \\
-M4 &  &  \\
-\bottomrule
-\end{tabular}
-\caption{Project milestones.}
-\end{table}
+
+\subsection*{(A) Previous work: computational framework for isotopic cloud microphysics}
+In previous NCN-funded research, I developed and implemented extensions of the PySDM particle-based cloud microphysics
+framework enabling quantitative analysis of stable water isotope fractionation in clouds.
+The work focused on introducing physically based timescale formulations and analytical representations
+of isotopic equilibration processes in cloud droplets.
+
+Specifically, I implemented a set of four physically motivated formulations for isotopic equilibration timescales
+($\tau$) based on classical literature (\cite{1958_Bolin}, \cite{1984_Jouzel_Merlivat}(or '75?), \cite{1975_Stewart}),
+and diffusion-based derivations from first principles (Fick’s law and Fourier-type analogies).
+These formulations were integrated into PySDM as modular Python classes with a unified interface,
+enabling systematic comparison of competing theoretical descriptions.
+
+The implementation was accompanied by full software documentation (NumPy/Sphinx style) integrated
+into the PySDM documentation system, ensuring usability and reproducibility within the open-source community.
+Particular attention was given to dimensional consistency, numerical stability, and clarity of physical assumptions.
+
+\subsection*{(B) Analytical modeling of isotopic fractionation dynamics}
+In parallel, I developed an analytical model of isotopic fractionation in cloud systems.
+The model describes the evolution of heavy water isotopologues ($\mathrm{HDO}$, $\mathrm{H_2^{17}O}$, $\mathrm{H_2^{18}O}$)
+coupled to bulk microphysical evolution of droplets.
+A key outcome of this work was the introduction of a dimensionless quantity (the Bolin number),
+which relates the {\color{red}characteristic equilibration timescales} of heavy and light isotopologues.
+This formulation allows the isotopic evolution problem to be reduced to a compact dimensionless representation
+that captures equilibrium and kinetic fractionation regimes within a unified framework.
+
+First implementation of the model was developed within PySDM and validated against theoretical benchmarks,
+including the isotopic equilibrium curves presented in \cite{1994_Gedzelman_Arnold}.
+Initial results confirmed that the proposed formulation reproduces
+expected equilibrium conditions under limiting assumptions.
+
+\subsection*{(C) Model validation}
+The initial validation was performed using automated unit tests integrated into GitHub Actions workflows,
+ensuring correctness of physical constraints and numerical implementation.
+A preliminary comparison with theoretical predictions demonstrated consistency
+with established isotopic fractionation theory.
+
+The results were accepted for presentation at the 17th Conference on Cloud Physics 
+(AMS Madison Summit 2026),
+where the particle-based isotopic microphysics framework and the Bolin number formulation
+will be presented to the atmospheric science community.
+
+% IMPORTANT TO STATE WHAT WILL BE NEW! REFINE
+
+\section*{(D) What is new in the proposed project}
+Despite these advances, the current framework remains limited in three fundamental aspects:
+First, the existing implementation focuses primarily on timescale formulations and simplified isotopic evolution laws,
+without a fully consistent treatment of coupled water–ice phase interactions.
+Also this approach needs further analysis: in this formulation the Bolin number must remain
+positive while we can imagine situation when
+changes of mass for heavy and light isotopologue are opposite signs.
+Mixed-phase processes, which are essential for realistic cloud systems,
+are not yet represented in a unified isotopic framework.
+
+Second, the current model describes isotopic fractionation largely in
+a diagnostic or semi-analytical form,
+rather than as a fully coupled prognostic system embedded within cloud microphysics.
+As a result, feedbacks between microphysical evolution
+(condensation, deposition, freezing, riming)
+and isotopic composition are not fully resolved.
+(We have to think about this)
+
+Third, there is currently no systematic data-constrained validation framework linking
+the model to field and laboratory observations across multiple measurement types
+(cloud water, vapor, precipitation, and ice phase isotopic composition).
+
+The proposed project addresses these limitations by developing a fully coupled,
+physically consistent water–ice isotopic microphysics model, extending the current PySDM-based framework to include:
+
+- explicit mixed-phase cloud processes,
+- multi-isotope prognostic evolution in all phases,
+- and systematic validation against observational datasets (including CAESAR campaign data and laboratory cloud chamber experiments).
+
+
+
+
+
+\subsection{Milestones}
+Mathematical analysis of constrains
+Multiple isotopes simultanuosly resolved
+
+Comparison with measurements (sensitivity, analysis, what is the importance of our approach?)
+Validation of the model, analysis on limitations
+
+Ice phase in simulations
+Comparison with measurements - contiunuation
 
 \subsection{Risk Analysis}
 
-\begin{table}[H]
-\centering
-\begin{tabular}{p{5cm} p{3cm} p{5cm}}
-\toprule
-Risk & Probability & Mitigation Strategy \\
-\midrule
-Risk 1 & Low/Med/High &  \\
-Risk 2 & Low/Med/High &  \\
-Risk 3 & Low/Med/High &  \\
-\bottomrule
-\end{tabular}
-\caption{Risk analysis and mitigation measures.}
-\end{table}
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 4. RESEARCH METHODOLOGY
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Research Methodology}
+How it will be conducted?
 
-\subsection{Research Design}
 
-Describe how the research will be conducted.
+Methods and Techniques: 
+1. Experimental methods: 
+  only with collaboration with Elise, work on the new experiment about isotopic composition between ice and vapour (one snowflake)
 
-\subsection{Methods and Techniques}
+2. Theoretical methods:
+  mathematical analisis of errors
 
-Describe:
+3. Computational: 
+ - should I explain here on my programming character? Like what language...
 
-\begin{itemize}
-    \item Experimental methods
-    \item Theoretical methods
-    \item Computational methods
-    \item Statistical methods
-\end{itemize}
+- Data Collection - in separate field
 
-\subsection{Data Collection}
+- Data Analysis: Describe analysis procedures and validation methods.
 
-Describe data sources and acquisition procedures.
-
-\subsection{Data Analysis}
-
-Describe analysis procedures and validation methods.
-
-\subsection{Research Infrastructure}
-
-Describe equipment, laboratory facilities, software, databases,
+- Research Infrastructure: Describe equipment, laboratory facilities, software, databases,
 and other research tools.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 5. RESEARCH TEAM
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+- Research Team and Qualifications
 
-\section{Research Team and Qualifications}
-
-\subsection{Team Composition}
-
-\begin{longtable}{p{4cm} p{11cm}}
-\toprule
-Person & Role in the Project \\
-\midrule
-Principal Investigator & \\
-Researcher 1 & \\
-Researcher 2 & \\
-Researcher 3 & \\
-\bottomrule
-\end{longtable}
-
-\subsection{Qualifications and Expertise}
-
-Describe the competencies relevant to the project.
-
-\subsection{Key Achievements}
-
-Provide information on:
-
-\begin{itemize}
-    \item Publications
-    \item Patents
-    \item Awards
-    \item Previous grants
-    \item Other relevant achievements
-\end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% PAGE LIMIT
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\clearpage
-
-\begin{center}
-\textbf{End of the 15-page project description section}
-\end{center}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 6. REFERENCES
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \appendix
 
 \clearpage
-
-\pagenumbering{arabic}
-\setcounter{page}{1}
-
-
 \printbibliography
 
 \end{document}
