@@ -7,6 +7,11 @@
 \usepackage{amsmath}
 \usepackage{graphicx,xcolor}
 
+\usepackage[version=4]{mhchem}
+
+
+
+
 \usepackage[
     top=2cm,
     bottom=2cm,
@@ -19,77 +24,101 @@
     style=nature,
     doi=true,
     url=false,
-language=false
+    sorting=nyt,
+    maxbibnames=99,
+    maxcitenames=99
 ]{biblatex}
 
 \addbibresource{isotopes.bib}
-\title{Towards Isotopic Closure in Clouds: A Particle-Based Framework for Water Isotopologue Evolution
-Bolin number Applicability in Simulations of Isotopic Composition
+\title{Isotopic Closure in Particle-Based Cloud Models Using the Bolin Number\\
+Isotopic closure w cząsteczkowych modelach chmur z wykorzystaniem liczby Bolina
 }
 \date{}
 
 % Document
 \begin{document}
 \maketitle
-\section{Scientific goal of the projecRt}
+\section{Scientific goal of the project}
 Water stable isotopologues are natural tracers of the global hydrological cycle.
 Variations in isotopic composition arise from isotope fractionation accompanying
 phase transitions and transport processes in the atmosphere.
 Consequently, the isotopic composition of atmospheric water preserves information
 about the thermodynamic and microphysical history of air parcels, clouds,
-and precipitation \textcite{1961_Craig,2010_Gat, Daansgard?}.
-
-In atmospheric sciences, the water isotopologues most commonly studied are HDO,
-H$_2^{17}$O, and H$_2^{18}$O. Their relative abundances differ from that
-of the dominant isotopologue H$_2^{16}$O and lead to measurable fractionation
-during evaporation, condensation, and mixing processes 
-\parencite{2008_Horita_EtAl,1975_Merlivat_Coantic,2003_Cappa_EtAl,2020_Gonfiantini_EtAl,2017_Lamb_EtAl,2022_Pierchala_EtAl}.
-
-
+and precipitation.
+In atmospheric sciences, the water isotopologues most commonly studied are \ce{HDO},
+\ce{H2{}^18O}, and \ce{H2{}^17O}.
+Their relative abundances differ from that
+of the dominant isotopologue \ce{H2{}^16O} and lead to measurable fractionation
+during evaporation, condensation, and mixing processes.
 Recent advances in cavity-enhanced laser spectroscopy have enabled continuous,
-high-precision measurements of multiple water isotopologues in atmospheric water vapour
-\cite{2011_Tremoy_EtAl,2008_Wen_EtAl,2020_DeGraaf_EtAl}.
+high-precision measurements of multiple water isotopologues in atmospheric water vapour, especially
+for \ce{H2{}^17O}.
 
-Despite significant progress in isotopic observations, a key open question remains
-whether isotopic evolution of the coupled vapour-cloud-precipitation system can be
-simulated with sufficient accuracy to test the hypothesis of \emph{isotopic closure}.
+With studies on Rayleigh process.
+TODO (one citation).
 
-In this project, isotopic closure is understood as the degree to which cloud
-microphysical history (phase transitions, mixing, and precipitation formation)
-can be constrained from isotopic observations under a physically consistent model framework.
+This project aims to constrain isotopic closure in aerosol-cloud-precipitation system.
+Measurements of isotopic composition of water vapour below the cloud are the input to the particle-resolved
+model.
+Resulting state of the simulated cloud will be validated against the data. 
+The goal is to reconstruct isotopic cloud conditions using numerical simulations.
+Evolution of isotopic composition in the vapour and activated droplet is modelled using Super-Droplet Method \cite{2009_Shima_EtAl}.
 
-The main objective of this project is to develop and validate a particle-based model
-of isotopic evolution in cloud systems and to assess to what extent isotopic
-measurements constrain key cloud processes.
+The open question is can we achieve isotopic closure and what is the minimal needed framework. 
+In this project several setups will be tested, including Box, Parcel and Column models implemented in the PySDM package \parencite{2023_DeJong_EtAl}...
+% TODO address, connect CCN closure
 
-The project combines theoretical development, numerical simulations,
-and validation against observational datasets obtained during aircraft campaigns
+The research will be conducted with three components: (i) mathematical modelling of
+isotopic fractionation for water isotopolgues in the ice-liquid-vapour systems,
+including equilibrium and kinetic fractionation;
+(ii) numerical simulations; software development with multi-isotope tracking for the possibility to applay it to the measured and experimental data;
+(iii) connecting data from measurements and experiment with scientific software, model and implementation validation,
+uncertainty analysis, observational data obtained during aircraft campaigns
 and laboratory experiments.
 
-
-
 \section{Significance of the project}
+% To include:
+- supersaturation constraints
+- mixing scenarios
+- parameterization of microphysical processes
+- climate, meteorological studies.
+
 Understanding cloud microphysical processes remains one of the key challenges in atmospheric science
-TODO? and a major source of uncertainty in weather and climate prediction.
+and a major source of uncertainty in weather and climate prediction.
 One of the difficulties is lack of direct observational constraints on supersaturation,
 entrainment mixing, and phase transitions in mixed-phase clouds.
 
 Stable water isotopologues provide a unique tracer of cloud evolution because their composition
 is directly governed by phase changes, diffusion, and mixing processes
-\cite{2008_Horita_EtAl,1975_Merlivat_Coantic,2003_Cappa_EtAl}.
-
+\cite{2008_Horita_EtAl,2003_Cappa_EtAl}.
 As a result, isotopic signals integrate the history of vapour–liquid–ice interactions
 and may encode information about cloud microphysical pathways.
 
+% TODO what kind of information are needed
 The central question addressed in this project is whether this information is sufficient
 to support isotopic closure,
 understood as a constrained and testable reconstruction of cloud processes from isotopic observations.
 
 To address this, the project develops an integrated framework combining three components.
 
+\section{state-of-the-art and preliminary results}
+- isotopic fractionation in other models, Eulerian, global models
+- My previous work 
+
+P
+In the previous NCN-project in which I was a co-investogator 
+introduction of the Bolin Number was proposed for modelling isotopic composition in particle-based models.
+The concept of this dimensionless quantity originates from \textcite{1958_Bolin} in the context
+of the analysis of tritium (\ce{^3H}) concentration in precipitation.
+The Bolin number represents relation between diffusion processes for one isotopologue to the other,
+in this studies it is expressed as specific mass change of heavy isotopologue (\ce{HTO}, \ce{HDO})to the light
+
+\section{Research Concept and Work Plan}
+%  here we can address three points mentioned in the first sections.
+
+% Significance and not what is done
 First, a physically based formulation of isotopic fractionation is developed
 using diffusion-consistent and thermodynamically constrained descriptions.
-T
 A key element is a dimensionless representation of isotopic equilibration via the Bolin number,
 defined as a ratio of characteristic isotopic equilibration timescale to phase-change timescale,
 providing a unified description across equilibrium and kinetic regimes
@@ -97,7 +126,7 @@ providing a unified description across equilibrium and kinetic regimes
 
 Second, the formulation is embedded in a particle-based cloud microphysics model
 (Super-Droplet Method, PySDM)
-\cite{2009_Shima_EtAl, Arabas},
+\cite{2009_Shima_EtAl}, Arabas
 enabling Lagrangian simulation of cloud evolution with coupled isotopic composition.
 
 Third, the model is evaluated against laboratory and field observations,
@@ -123,7 +152,8 @@ idealised experiments, and observational constraints continuously inform each ot
     {\color{red}TODO:} PySDM description, what is in the package already, what will be used
     \cite{2023_DeJong_EtAl}
 
-In previous NCN-funded research, I developed and implemented extensions of the PySDM particle-based cloud microphysics
+In previous NCN-funded research, I developed and implemented extensions of the PySDM particle-based
+cloud microphysics
 framework enabling quantitative analysis of stable water isotope fractionation in clouds.
 The work focused on introducing physically based timescale formulations and analytical representations
 of isotopic equilibration processes in cloud droplets.
@@ -163,7 +193,7 @@ The results were accepted for presentation at the 17th Conference on Cloud Physi
 where the particle-based isotopic microphysics framework and the Bolin number formulation
 will be presented to the atmospheric science community.
 
-
+% it is a good starting point, preliminary results show possibility to perform this project
 However, the current framework does not yet include ice-phase fractionation processes
 and has not been tested in mixed-phase cloud environments or against observational datasets.
 As a result, isotopic closure has not yet been addressed in a complete cloud system context.
@@ -197,6 +227,13 @@ A central element is the Bolin number formulation, representing isotopic equilib
 through a dimensionless measure of relative isotopic mass-change rates.
 This formulation provides a unified description of isotopic adjustment across vapour, liquid, and ice phases.
 
+
+Measurable goals (SMART):
+\begin{enumerate}
+    \item error, uncertainties
+\end{enumerate}
+
+
 \textbf{WP2: Particle-based numerical implementation}
 The theoretical framework will be implemented within the open-source PySDM model,
 extending it to include ice-phase processes and fully prognostic multi-isotopologue evolution.
@@ -209,10 +246,15 @@ A set of controlled numerical experiments will isolate key processes and quantif
 to thermodynamic and microphysical parameters, including supersaturation, temperature, 
 droplet size distribution, and ice fraction.
 
+Measurable goals (SMART):
+\begin{enumerate}
+    \item test cases
+\end{enumerate}
+
 \textbf{WP3: Observational and experimental validation}
 The model will be evaluated using data from the CAESAR aircraft campaign and laboratory experiments
 performed in collaboration with NSF NCAR (Elise Rosky).
-    {\color{red}TODO mention collaboration} \cite{Rosky2025MixedPhaseIsotopes} + cite CAESAR
+    {\color{red}TODO mention collaboration} \cite{2025_Rosky_MixedPhaseIsotopes} + cite CAESAR
 These datasets provide complementary constraints on vapour, cloud water, ice, precipitation,
 and isotopic composition.
 
@@ -229,7 +271,11 @@ while observational constraints from WP3 are used to evaluate and adjust
 model assumptions and numerical representations.
 
 
-
+Measurable goals (SMART):
+\begin{enumerate}
+    \item PySDM for experiment
+    \item comparisons
+\end{enumerate}
 
 
 \section{Research methodology}
