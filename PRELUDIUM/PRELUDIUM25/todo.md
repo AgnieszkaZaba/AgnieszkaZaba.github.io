@@ -1,3 +1,6 @@
+TODO:
+zarządzanie danymi - dane pomiarowe
+
 Plan na opis szczegółowy
 Projekt:
  - współpraca ze studentem, którym może wspólnie realizować zadania, 
@@ -143,6 +146,83 @@ Task 5: Model validation using observational and experimental data
 The extended model will be evaluated against observational datasets from aircraft campaigns and laboratory cloud chamber experiments. Simulated isotopic fields will be compared with measured vapour, cloud water, and ice isotopic composition using trajectory-based and ensemble methods. Model performance will be assessed in terms of bias, variability, and structural agreement with observed isotopic evolution. Discrepancies will be analysed to identify missing physical processes or parameterisation deficiencies.
 Task 6: Sensitivity analysis and uncertainty quantification
 This task will quantify the dependence of isotopic signals on key microphysical and environmental parameters. Systematic sensitivity experiments will be conducted to determine the influence of temperature, humidity, aerosol properties, droplet spectra, and ice fraction. Ensemble simulations will be used to propagate parameter uncertainty and assess robustness of isotopic closure results. Where appropriate, information-theoretic or statistical measures will be used to quantify predictive skill and uncertainty reduction.
+
+
+
+## **English version – Research Plan (NCN scoring optimized)**
+
+Development of a theory of isotope fractionation in mixed-phase clouds, ensuring correct limiting behaviour and conservation properties.
+Formulation of a unified Bolin-number-based framework for isotopic equilibration across vapour, liquid, and ice phases.
+Extension of the PySDM particle-based cloud microphysics model to a consistent multi-isotopologue framework, enabling simultaneous prognostic simulation of multiple water isotopes.
+Assessment of isotopic closure through numerical experiments, sensitivity analysis, and identification of key microphysical controls on isotopic signals.
+Validation against laboratory and aircraft observations using trajectory-based and statistical comparison methods.
+
+## **Wersja polska – Plan badań (NCN scoring optimized)**
+Opracowanie teorii frakcjonowania izotopowego w chmurach wielofazowych, zgodnej z zasadami zachowania i przypadkami granicznymi.
+Sformułowanie zunifikowanego opisu równowagi izotopowej opartego na liczbie Bolina dla fazy gazowej, ciekłej i lodowej.
+Rozszerzenie modelu PySDM o spójny wieloizotopologowy opis wody, umożliwiający jednoczesną prognostyczną symulację wielu izotopów.
+Ocena możliwości domknięcia izotopowego na podstawie symulacji numerycznych i analiz wrażliwości.
+Walidacja modelu na podstawie danych laboratoryjnych i obserwacji lotniczych z wykorzystaniem metod trajektoryjnych i statystycznych.
+
+
+
+
+Streszczenie:
+The project aims to determine whether the stable isotopic composition of atmospheric water can be used as a diagnostic of the microphysical history of clouds, including phase transitions, mixing processes, and precipitation formation. The central scientific problem is the limited observational constraint on cloud microphysics, particularly in mixed-phase clouds where liquid droplets and ice particles coexist and interact through processes such as droplet collision-coalescence, ice nucleation, vapour deposition, sublimation, and riming, all of which exhibit strong stochastic variability and remain only partially constrained by observations. The project addresses this challenge by testing the concept of isotopic closure, defined as the extent to which cloud microphysical processes can be inferred from isotopic observations within a physically consistent modelling and numerical analysis framework.
+
+The main research question is whether isotopic measurements of vapour, liquid water, and ice provide sufficient information to constrain cloud microphysical evolution. This is divided into three sub-questions: whether isotopic signals uniquely reflect cloud evolution pathways under different atmospheric conditions; how kinetic effects and phase transitions limit the diagnostic value of isotopic tracers; and whether a unified dimensionless representation of isotopic equilibration can describe fractionation across regimes.
+
+The project is significant because current cloud and isotope modelling approaches do not provide a consistent particle-scale representation of isotopic evolution in mixed-phase clouds. Existing models are typically bulk or Eulerian and therefore cannot resolve stochastic variability in droplet and ice particle populations. This limits the ability to represent key microphysical processes controlling cloud evolution, such as entrainment-driven mixing, supersaturation fluctuations, stochastic collision–coalescence, and ice-phase growth pathways, which remain major sources of uncertainty in cloud–climate interactions. Embedding isotopic tracers within a particle-based cloud microphysics framework enables a new physically based approach to quantifying the information content of isotopic observations.
+
+The research combines theoretical development, numerical modelling, numerical analysis, and observational evaluation. A new formulation of isotopic fractionation based on a dimensionless equilibration timescale is developed and implemented within the Super-Droplet Method (PySDM), a Lagrangian particle-based cloud microphysics model widely used in cloud research. The model is extended to include vapour, liquid, and ice isotopologues and their interactions during condensation, evaporation, deposition, sublimation, and freezing, enabling prognostic simulation of isotopic evolution at particle level.
+
+The model is evaluated using laboratory chamber experiments and aircraft observations from field campaigns. Model performance is assessed using trajectory-based simulations and statistical diagnostics of isotopic composition, including bias, variability, and correlation structure. Sensitivity and uncertainty analyses, based on systematic numerical experiments, are used to identify the microphysical controls on isotopic signals and to determine the atmospheric conditions under which isotopic closure holds or fails.
+
+The project consists of three work packages. The first develops a theoretical framework for isotopic fractionation in mixed-phase clouds, ensuring consistency with conservation laws and known limiting cases. The second implements this framework in a particle-based numerical model and extends it to mixed-phase processes, with emphasis on numerical robustness and consistency of the discretised formulations. The third validates the model using observational and experimental datasets, combining forward simulations with systematic numerical analysis and comparison to measured isotopic fields.
+
+The project is carried out by a PhD researcher with experience in numerical modelling and scientific computing, under supervision of an expert in particle-based cloud microphysics. A student assistant supports software development and testing of simplified model configurations. The project integrates atmospheric physics, cloud microphysics, numerical modelling, numerical analysis, and observational data analysis to improve understanding of cloud processes and the interpretation of atmospheric water stable isotope measurements.
+
+
+
+# Budżet
+| Pozycja                      |        Kwota USD |        Kwota PLN |
+| ---------------------------- | ---------------: | ---------------: |
+| Diety (59 USD × 12)          |       708,00 USD |     2 605,44 PLN |
+| Diety hotelowe (100 USD × 6) |       600,00 USD |     2 208,00 PLN |
+| Dojazdy w miastach           |        70,80 USD |       260,54 PLN |
+| Dieta dojazdowa              |        59,00 USD |       217,12 PLN |
+| Uczestnictwo                 |       210,00 USD |       772,80 PLN |
+| **Razem**                    | **1 647,80 USD** | **6 063,90 PLN** |
+
+Budget justification: Funds are requested to support a 14-day research visit in the USA.
+The estimated costs include daily allowances (PLN 3300),
+accommodation allowances for 13 nights (PLN 5000),
+local transportation (PLN 300),
+and round-trip airfare between Poland and the United States (PLN 3,000).
+The total estimated budget amounts to 12000 PLN.
+
+Wyjazd zagraniczny na współpracę międzynarodową do Stanów Zjednoczonych
+
+
+# SA
+jakie czynniki wpływają na zgodność, z czego wynikają rozbieżności
+ja robię modelowanie, Elise pomiary, żeby zrozumieć co jest najważniejsze, jakie czynniki, zeby dostać 
+isotopic closure
+propagation of uncertainities
+odwołanie się do CCN,
+wyjaśnienie jaki jest tem model, czy mozemy zrobić z tego zadanie: jaki 
+framework jest potrzebny, aby uzyskać isotopic closure? jaki jest minimalny setup do isotopic closure
+jaki setup możemy zrobić mając konkretne dane izotopowe.
+
+cytowania, wybrać najważniejsze i bardziej współczesne.
+opisać deriverables do każdego punktu
+SMART, INVEST, Specific, Measurable, Achievable, Relevant, Time-bound
+
+pomoc w projektowaniu eksperymentu w NCARze, bazując na ZFŚ know-how, wykorzystanie wiedzy (Pierchała)
+wpływ naszego narzędzia na kształtowanie eksperymentu.
+
+
+najprostszy potrzebny wystarczający model
 
 
 
