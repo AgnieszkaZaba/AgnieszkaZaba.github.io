@@ -224,5 +224,294 @@ wpływ naszego narzędzia na kształtowanie eksperymentu.
 
 najprostszy potrzebny wystarczający model
 
+# chat: propositions for citations:
+
+Good strategy. For NCN, references in the *Significance* section should not be exhaustive. They should demonstrate that you know the field and guide the reviewer through the argument. I would aim for **8–12 references total** in this section.
+
+## Paragraph 1: Why cloud microphysics matters
+
+> Cloud microphysical processes remain one of the largest sources of uncertainty...
+
+### Essential references
+
+**Grabowski & Wang (2013)**
+
+* Review of cloud modeling and cloud microphysics challenges.
+* Widely cited in cloud physics.
+* Good scientific reference instead of relying only on IPCC.
+
+**Mülmenstädt & Feingold (2018)** or **Feingold et al.**
+
+* Clouds as major uncertainty in climate forcing and aerosol-cloud interactions.
+* More focused on uncertainty than purely modeling.
+
+### Alternatives
+
+**Stevens & Feingold (2009)**
+
+* Aerosol-cloud interactions and uncertainty.
+
+**IPCC AR6 WG1 (2021)**
+
+* Reviewer immediately recognizes it.
+* Good support for "largest uncertainty in climate projections".
+
+### Recommendation
+
+Use:
+
+* Grabowski & Wang (2013)
+* IPCC AR6 (2021)
+
+This combines process-level and climate-level justification.
+
+---
+
+## Paragraph 2: Why isotopes matter
+
+> Stable water isotopologues provide a unique observational tracer...
+
+### Essential references
+
+**Dansgaard (1964)**
+
+* Foundational paper.
+* Every isotope reviewer expects to see it.
+
+**Jouzel (1986)**
+
+* Classic review of isotopes in atmospheric sciences and paleoclimate.
+
+### Alternatives
+
+**Galewsky et al. (2016)**
+
+* Modern review in Reviews of Geophysics.
+* Very highly cited.
+* Excellent bridge between isotope theory and atmospheric applications.
+
+**Noone & Simmonds (2002)**
+
+* Important atmospheric isotope modeling paper.
+
+### Recommendation
+
+Use:
+
+* Dansgaard (1964)
+* Galewsky et al. (2016)
+
+This gives both historical and modern perspectives.
+
+---
+
+## Paragraph 3: Measurements and spectroscopy
+
+> Recent advances in laser spectroscopy...
+
+### Strong candidates
+
+**Steen-Larsen et al. (2014)**
+
+* Well-known review/application paper.
+* Atmospheric isotope measurements.
+
+**Aemisegger et al. (2012)**
+
+* Laser spectroscopy in atmospheric water vapor.
+
+### Newer options
+
+**Bonne et al.**
+
+* Continuous water vapour isotope observations.
+
+**Bailey et al. / Sayres group papers**
+
+* H(_2^{17})O measurement developments.
+
+### Recommendation
+
+Because your proposal explicitly mentions H(_2^{17})O:
+
+Use:
+
+* Steen-Larsen et al. (2014)
+* a recent H(_2^{17})O atmospheric measurement paper (2022–2025)
+
+This immediately signals novelty and data availability.
+
+---
+
+## Paragraph 4: State of the art in isotope-enabled models
+
+> Stable water isotopes are routinely represented...
+
+### Essential references
+
+**Werner et al. (2011)**
+
+* ECHAM-wiso.
+* Standard citation.
+
+**Risi et al. (2010)**
+
+* Review/application of isotope-enabled GCMs.
+
+### Alternatives
+
+**Yoshimura et al. (2008)**
+
+* IsoGSM.
+
+**Pfahl et al. (2012)**
+
+* Isotope diagnostics.
+
+**Fiorella et al.**
+
+* More recent overview.
+
+### Recommendation
+
+Use:
+
+* Werner et al. (2011)
+* Risi et al. (2010)
+
+Together they represent the mature isotope-modeling community.
+
+---
+
+## Paragraph 5: Fractionation theory
+
+> Theoretical descriptions of equilibrium and kinetic fractionation...
+
+### Essential references
+
+**Jouzel & Merlivat (1984)**
+
+* Classic kinetic fractionation formulation.
+* Everybody knows it.
+
+**Merlivat (1978)**
+
+* Diffusion-limited fractionation.
+
+### Alternatives
+
+**Cappa et al.**
+
+* More modern treatment.
+
+**Horita & Wesolowski (1994)**
+
+* Equilibrium fractionation coefficients.
+
+### Recommendation
+
+Use:
+
+* Jouzel & Merlivat (1984)
+* Horita & Wesolowski (1994)
+
+This covers both kinetic and equilibrium fractionation.
+
+---
+
+## Paragraph 6: Particle-based cloud microphysics
+
+> Particle-based cloud models have emerged...
+
+### Essential references
+
+**Shima et al. (2009)**
+
+* Original SDM paper.
+* Mandatory if discussing particle-based clouds.
+
+**Unterstrasser et al. (2017)** or **Dziekan & Pawlowska**
+
+* Modern SDM developments.
+
+### Alternatives
+
+**Arabas & Shima (2017)**
+
+* Condensation solver.
+
+**de Jong et al. (2023)** (PySDM)
+
+* If you want to emphasize software ecosystem.
+
+### Recommendation
+
+Use:
+
+* Shima et al. (2009)
+* de Jong et al. (2023)
+
+Reviewer sees both foundational method and current implementation.
+
+---
+
+## Paragraph 7: Scientific gap and isotopic closure
+
+This is where references are tricky because the novelty is that **there are essentially no direct references**.
+
+You need citations showing:
+
+1. CCN closure exists.
+2. Isotope closure does not.
+
+### CCN closure references
+
+**McFiggans et al. (2006)**
+
+* Aerosol-cloud closure.
+
+**Kumar et al. (2011)**
+
+**Rissman et al.**
+
+### Recommendation
+
+One citation is enough:
+
+* McFiggans et al. (2006)
+
+Then write something like:
+
+> "Unlike CCN closure studies, an analogous concept of isotopic closure has not yet been systematically investigated."
+
+No citation after that sentence.
+
+That absence is exactly the gap.
+
+---
+
+# My suggested final bibliography for Section 2
+
+If you want about 10 references total:
+
+1. Grabowski & Wang (2013)
+2. IPCC AR6 (2021)
+3. Dansgaard (1964)
+4. Galewsky et al. (2016)
+5. Steen-Larsen et al. (2014)
+6. Werner et al. (2011)
+7. Risi et al. (2010)
+8. Jouzel & Merlivat (1984)
+9. Shima et al. (2009)
+10. de Jong et al. (2023)
+11. McFiggans et al. (2006) *(optional but useful for closure analogy)*
+
+This set tells a coherent story:
+
+**Cloud uncertainty → isotopes as tracers → measurements now available → isotope-enabled models exist → particle-based models exist → isotopic closure does not exist.**
+
+That narrative is exactly what an NCN reviewer needs before reaching your scientific objectives.
+
+
 
 

@@ -161,6 +161,14 @@ Beard \& Pruppacher (1971), Pruppacher \& Rasmussen (1979), Graf et al. (2019),
 De Szoeke et al. (2024), Jouzel (1986), Hiron \& Flossmann (2020), Galewsky et al. (2016),
 Gat (1996), Noone (2012), Blossey \& Kuang (2010), and Pruppacher \& Klett (2010).
 
+Replace sometimes with:
+
+\begin{itemize}
+\item “isotopic signature”
+\item “isotopic state”
+\item “delta-values”
+\end{itemize}
+
 
 \section{Fundamentals of Stable Water Isotope Hydrology}
 \begin{itemize}
@@ -721,6 +729,384 @@ Methods and Techniques:
 and other research tools.
 
 - Research Team and Qualifications
+
+\section{Warning! chat}
+Below is a clean, NCN-style “Option A” rewritten proposal core based on your material. I kept your scientific identity intact, but removed redundancy, cleaned structure, and sharpened the narrative into a reviewer-friendly form (clarity, novelty, feasibility, measurable goals).
+
+You can paste this directly as the backbone of your document and then re-attach figures, Gantt, and bibliography.
+
+{ Isotopic Closure in Particle-Resolved Cloud Models Using the Bolin Number}
+\section*{1. Scientific goal of the project}
+Stable water isotopes  are widely used tracers of the atmospheric water cycle, providing constraints on phase transitions, transport pathways, and cloud microphysical processes. Their evolution is governed by equilibrium and kinetic fractionation during condensation, evaporation, deposition, and sublimation.
+
+Despite their observational power, current understanding of isotopic signals in clouds remains limited by the absence of physically consistent, particle-resolved models that explicitly represent isotope evolution in mixed-phase cloud systems.
+
+The goal of this project is to develop a physically consistent, particle-resolved modelling framework for isotopic cloud microphysics and to investigate whether isotopic observations can provide sufficient constraints to achieve isotopic closure—i.e. reconstruction of cloud microphysical history from isotopic composition.
+
+The project introduces a unified dimensionless representation of isotopic evolution based on the Bolin number, linking diffusion timescales of isotopologues with cloud microphysical evolution.
+
+\section*{2. Significance of the project}
+\subsection*{2.1 State of the art}
+Isotope-enabled atmospheric models exist at multiple scales:
+
+\begin{itemize}
+\item global climate models (e.g. isotope-enabled GCMs),
+
+
+\item cloud-resolving Eulerian models,
+
+
+\item parcel and bin-resolved models.
+
+
+\end{itemize}
+However, these approaches typically:
+
+\begin{itemize}
+\item represent cloud water in bulk form,
+
+
+\item do not track individual particle histories,
+
+
+\item simplify or neglect ice-phase isotope fractionation,
+
+
+\item are not embedded in fully Lagrangian particle frameworks.
+
+
+\end{itemize}
+At the same time, particle-resolved microphysics models based on the Super-Droplet Method (SDM) (PySDM) provide state-of-the-art representations of aerosol–cloud interactions, but lack systematic isotope extensions.
+
+\subsection*{2.2 Scientific gap}
+There is currently no open framework that:
+
+\begin{itemize}
+\item couples isotopic fractionation with particle-resolved cloud microphysics,
+
+
+\item represents liquid–ice–vapour isotope exchange in a unified manner,
+
+
+\item tracks multiple isotopologues simultaneously at particle level,
+
+
+\item allows systematic evaluation of isotopic closure.
+
+
+\end{itemize}
+As a result, the potential of isotopic observations to constrain cloud microphysical processes remains largely unexplored at process-resolving scales.
+
+\subsection*{2.3 Impact}
+The project will bridge isotope hydrology and particle-resolved cloud physics, enabling:
+
+\begin{itemize}
+\item physically based interpretation of isotope observations,
+
+
+\item improved constraints on cloud microphysical processes,
+
+
+\item a new modelling paradigm linking isotopes and cloud dynamics.
+
+
+\end{itemize}
+\section*{3. Concept and work plan}
+\subsection*{3.1 Central hypothesis}
+Isotopic composition in clouds encodes sufficient information about microphysical evolution to constrain cloud processes, provided that isotopic transport is represented in a physically consistent, particle-resolved framework.
+
+This leads to the concept of isotopic closure, defined as the ability to reconstruct cloud microphysical evolution from observed isotopic fields within quantified uncertainty.
+
+\subsection*{3.2 Work packages}
+\subsubsection*{WP1 — Theoretical framework}
+Development of a consistent formulation of isotopic fractionation in mixed-phase clouds.
+
+Tasks:
+
+\begin{itemize}
+\item derivation of isotope mass transfer equations for vapour, liquid, and ice phases,
+
+
+\item incorporation of equilibrium and kinetic fractionation,
+
+
+\item analysis of limiting regimes (Rayleigh, equilibrium, diffusion-dominated limits),
+
+
+\item formulation of a dimensionless framework based on the Bolin number.
+
+
+\end{itemize}
+Output:
+
+\begin{itemize}
+\item mathematically consistent isotopic cloud microphysics model.
+
+
+\end{itemize}
+\subsubsection*{WP2 — Particle-based implementation}
+Implementation within the SDM framework (PySDM).
+
+Tasks:
+
+\begin{itemize}
+\item extension of super-droplet attributes to include isotopic composition,
+
+
+\item implementation of liquid–vapour–ice isotope exchange processes,
+
+
+\item modular structure for isotopologue tracking,
+
+
+\item reproducible simulation environment (Python-based workflows).
+
+
+\end{itemize}
+Experiments:
+
+\begin{itemize}
+\item box model (fundamental process testing),
+
+
+\item parcel model (adiabatic ascent),
+
+
+\item column model (open system dynamics).
+
+
+\end{itemize}
+Output:
+
+\begin{itemize}
+\item open-source isotope-enabled SDM framework.
+
+
+\end{itemize}
+\subsubsection*{WP3 — Numerical experiments and sensitivity analysis}
+Systematic numerical investigation of:
+
+\begin{itemize}
+\item temperature dependence,
+
+
+\item supersaturation effects,
+
+
+\item droplet size distribution influence,
+
+
+\item ice fraction effects,
+
+
+\item initial isotopic composition sensitivity.
+
+
+\end{itemize}
+Methods:
+
+\begin{itemize}
+\item ensemble simulations,
+
+
+\item parameter sweeps,
+
+
+\item uncertainty quantification.
+
+
+\end{itemize}
+Output:
+
+\begin{itemize}
+\item sensitivity maps of isotopic evolution in cloud systems.
+
+
+\end{itemize}
+\subsubsection*{WP4 — Observational validation}
+Validation against:
+
+\begin{itemize}
+\item CAESAR aircraft campaign data,
+
+
+\item laboratory cloud chamber experiments,
+
+
+\item in-cloud vapor, liquid, and ice isotope measurements.
+
+
+\end{itemize}
+Methods:
+
+\begin{itemize}
+\item statistical comparison (bias, variance, RMSE),
+
+
+\item ensemble calibration,
+
+
+\item uncertainty propagation (Monte Carlo methods).
+
+
+\end{itemize}
+Output:
+
+\begin{itemize}
+\item model–data consistency assessment and constraints on isotopic closure.
+
+
+\end{itemize}
+\subsubsection*{WP5 — Isotopic closure analysis}
+Assessment of whether isotopic signals constrain cloud microphysics.
+
+Tasks:
+
+\begin{itemize}
+\item definition of closure metrics (error norms / information gain),
+
+
+\item comparison of forward simulations and observational constraints,
+
+
+\item identifiability analysis of cloud parameters.
+
+
+\end{itemize}
+Output:
+
+\begin{itemize}
+\item quantitative evaluation of isotopic closure feasibility.
+
+
+\end{itemize}
+\section*{4. Research methodology}
+The project combines three complementary approaches:
+
+\subsection*{4.1 Theoretical methods}
+\begin{itemize}
+\item derivation of isotopic transport equations,
+
+
+\item dimensional analysis and conservation laws,
+
+
+\item limiting-case analysis (equilibrium, Rayleigh, kinetic regimes),
+
+
+\item stability and consistency checks.
+
+
+\end{itemize}
+\subsection*{4.2 Computational methods}
+Particle-resolved cloud simulations using the Super-Droplet Method (PySDM).
+
+Key features:
+
+\begin{itemize}
+\item Lagrangian representation of cloud particles,
+
+
+\item explicit tracking of isotopic composition,
+
+
+\item stochastic Monte Carlo collision and condensation processes,
+
+
+\item modular architecture enabling process isolation.
+
+
+\end{itemize}
+Software engineering practices:
+
+\begin{itemize}
+\item version control and reproducibility,
+
+
+\item automated unit testing,
+
+
+\item continuous integration validation,
+
+
+\item notebook-based experiment reproducibility.
+
+
+\end{itemize}
+\subsection*{4.3 Data analysis methods}
+\begin{itemize}
+\item ensemble statistics,
+
+
+\item Bayesian parameter estimation (where applicable),
+
+
+\item uncertainty propagation,
+
+
+\item correlation and residual structure analysis,
+
+
+\item comparison with observational datasets.
+
+
+\end{itemize}
+\section*{5. Previous work and feasibility}
+The Principal Investigator has developed an initial isotope-enabled extension of the SDM framework, including:
+
+\begin{itemize}
+\item implementation of isotopic fractionation timescale formulations,
+
+
+\item integration into particle-based cloud simulations,
+
+
+\item validation against equilibrium fractionation benchmarks,
+
+
+\item verification using automated testing workflows,
+
+
+\item presentation of results at international conferences.
+
+
+\end{itemize}
+These results demonstrate the feasibility of extending particle-resolved microphysics to include isotopic processes and provide a solid foundation for the proposed project.
+
+\section*{6. Research team}
+The project is led by the Principal Investigator (PhD researcher in physical sciences with expertise in computational modelling and numerical physics).
+
+Scientific supervision is provided by an expert in particle-based cloud microphysics and the development of SDM-based modelling frameworks.
+
+A Bachelor/Master student will contribute to the development of a simplified educational isotope-enabled cloud model, implemented in Python or Julia, serving both research and training purposes.
+
+\section*{7. Expected results}
+The project will deliver:
+
+\begin{itemize}
+\item a fully developed isotope-enabled particle-resolved cloud microphysics framework,
+
+
+\item a consistent theoretical formulation of isotopic fractionation in mixed-phase clouds,
+
+
+\item quantitative understanding of isotopic closure limits,
+
+
+\item validated comparison with observational datasets,
+
+
+\item open-source tools for isotope-cloud modelling.
+
+
+\end{itemize}
+\section*{8. Keywords}
+Stable water isotopes; cloud microphysics; mixed-phase clouds; particle-resolved modelling; Super-Droplet Method; isotopic fractionation; Bolin number; aerosol-cloud interactions; atmospheric modelling.
+
+
+
+
+closure between modeled and measured isotopic content in clouds/aerosolds
 
 
 \appendix
