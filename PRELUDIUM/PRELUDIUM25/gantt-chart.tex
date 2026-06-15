@@ -1,0 +1,93 @@
+\begin{figure}[t]
+\centering
+\footnotesize
+
+\begin{ganttchart}[
+    hgrid,
+    vgrid,
+    hgrid style/.style={draw=gridgray, line width=0.3pt},
+    vgrid style/.style={draw=gridgray, line width=0.3pt},
+    x unit=0.55cm,
+    y unit chart=0.55cm,
+    bar height=0.7,
+    group height=0.8,
+    milestone height=0.7,
+    progress label text={},
+]{1}{24}
+\ganttset{
+group/.style={
+    draw=Aone,
+    fill=Aone!20,
+    line width=0.6pt
+}
+}
+\gantttitle{Project Duration (Months)}{24} \\
+\gantttitlelist{1,...,24}{1} \\
+
+%----------------------------------------------------
+% A1 THEORY
+%----------------------------------------------------
+\ganttset{
+bar/.style={
+    fill=Aone,
+    draw=Aone,
+    line width=0.4pt
+}
+}
+
+\ganttgroup{\ref{A1} Theory}{1}{12} \\
+
+\ganttbar{Task \ref{task:T1}}{1}{6} \\
+\ganttbar{Task \ref{task:T2}}{5}{10} \\
+\ganttbar{Task \ref{task:T3}}{8}{14} \\
+
+\ganttmilestone{\ref{M1} Theory framework}{6} \\
+
+%----------------------------------------------------
+% A2 NUMERICS
+%----------------------------------------------------
+\ganttset{
+bar/.style={
+    fill=Atwo,
+    draw=Atwo,
+    line width=0.4pt
+}
+}
+
+\ganttgroup{\ref{A2} Numerics}{3}{20} \\
+
+\ganttbar{Task \ref{task:T4}}{3}{10} \\
+\ganttbar{Task \ref{task:T5}}{8}{15} \\
+\ganttbar{Task \ref{task:T6}}{12}{20} \\
+
+\ganttmilestone{\ref{M2} Numerical framework}{12} \\
+
+%----------------------------------------------------
+% A3 VALIDATION
+%----------------------------------------------------
+\ganttset{
+bar/.style={
+    fill=Athree,
+    draw=Athree,
+    line width=0.4pt
+}
+}
+
+\ganttgroup{\ref{A3} Data}{8}{24} \\
+
+\ganttbar{Task \ref{task:T7}}{8}{13} \\
+\ganttbar{Task \ref{task:T8}}{12}{20} \\
+\ganttbar{Task \ref{task:T9}}{16}{24} \\
+
+\ganttmilestone{\ref{M3} Data integration}{18} \\
+\ganttmilestone{\ref{M4} Closure assessment}{24}
+
+\end{ganttchart}
+
+\caption{
+Project timeline structured into three work packages:
+\ref{A1} theoretical development, \ref{A2} numerical implementation,
+and \ref{A3} validation and closure assessment.
+}
+\label{fig:gantt}
+\end{figure}

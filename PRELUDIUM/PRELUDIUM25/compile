@@ -1,0 +1,12 @@
+rm full.bib
+rm shrt.bib
+
+pdflatex '\def\FontSize{12pt}\input{full.tex}'
+biber full
+pdflatex '\def\FontSize{12pt}\input{full.tex}'
+pdflatex '\def\FontSize{12pt}\input{full.tex}'
+
+pdflatex '\def\FontSize{11pt}\input{shrt.tex}'
+biber shrt
+pdflatex '\def\FontSize{11pt}\input{shrt.tex}'
+pdflatex '\def\FontSize{11pt}\input{shrt.tex}'

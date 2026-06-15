@@ -515,3 +515,13 @@ That narrative is exactly what an NCN reviewer needs before reaching your scient
 
 
 
+W zadaniach - te same pytania/komentarz, które zadawałem wcześniej:
+- czy zad. 1 nie jest już opisane w literaturze?
+- czy zad. 2 nie jest już opisane w Twoim streszczeniu AMS?
+- czy zad. 3 nie jest już w dużej części zrobione?
+- tytuł grantu pasuje głównie do zadań 4 i 5
+- w zadaniu 5: co to jest trajectoery-based methods i jak się ma do particle-based microphysics?
+
+
+w CV:
+- w "research achievement" są rzeczy, które wielu recenzentów może uznać za "nie research", myślę że lepiej tam się pochwalić zaproponowaniem i sformułowaniem liczby Bolina
