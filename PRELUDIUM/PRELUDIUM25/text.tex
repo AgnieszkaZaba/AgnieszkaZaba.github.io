@@ -285,7 +285,6 @@ framework within the particle-based cloud microphysics model PySDM,
 which is based on the Super-Droplet Method (SDM) \parencite{2009_Shima_EtAl}.
 
 \subsubsection*{State of the art}
-\subsubsection*{State of the art}
 The Super-Droplet Method (SDM) is a particle-based Lagrangian cloud microphysics framework 
 in which cloud and aerosol populations are represented by computational particles 
 (super-droplets) carrying multiplicities \parencite{2009_Shima_EtAl}.
@@ -393,39 +392,43 @@ The research plan is formulated according to
 the SMART principle (specific, measurable, achievable, relevant, and time-bound).
 Each work package is decomposed into specific tasks.
 
+
+
+
 \subsection*{Tasks}
+
+The project consists of core tasks structured into three work packages:
+theoretical development, numerical implementation, and observational validation.
+Each task produces at least one major research output (peer-reviewed publication
+and/or open-source software release).
+
+% ==========================================================
 \subsection{Theory: Isotopic Cloud Microphysics}
+
 \begin{tasks}
 
 \taskitem
-{Derive a closed set of prognostic equations for isotope-resolved mass transfer
-between vapour, liquid, and ice phases under mixed-phase cloud conditions.
-The formulation will explicitly include equilibrium fractionation, kinetic
-effects, and phase-change-driven non-equilibrium terms, consistent with a
-particle-based representation.}
+{Derive a closed set of governing equations for isotope-resolved mass transfer
+between vapour, liquid, and ice phases in mixed-phase clouds. The formulation
+includes equilibrium fractionation, kinetic effects, and phase-change-driven
+non-equilibrium processes in a particle-based framework.}
 {task:T1}
 
-\textbf{Deliverable:} peer-reviewed paper on isotopic cloud microphysics formulation.
+\textbf{Deliverable:} Results presented on EGU General Assembly (Months 6--12).
 
-\textbf{Dissemination:}
-Journal submission to \emph{Journal of Advances in Modeling Earth Systems} or
-\emph{Tellus B}, conference presentation at EGU General Assembly.
-
-\vspace{0.4em}
+\vspace{0.5em}
 
 \taskitem
-{Identify and analytically characterise limiting regimes of isotope evolution
-(including equilibrium fractionation, Rayleigh distillation, and diffusion-limited
-growth), and derive reduced-order models suitable for closure diagnostics.}
+{Identify limiting regimes of isotope evolution (equilibrium, Rayleigh
+distillation, diffusion-limited growth) and construct reduced-order models.
+Develop a regime map of isotopic behaviour and sensitivity structure.}
 {task:T2}
 
 \textbf{Deliverables:}
 (i) reduced-order model suite with validity regimes clearly defined,  
-(ii) diagnostic criteria for isotopic closure breakdown,  
-(iii) parameter maps of regime transitions (Bo-, supersaturation-, temperature-space).
+(ii) diagnostic criteria for isotopic closure breakdown. 
 
-\textbf{Dissemination:}
-Conference poster/talk (EGU or ICCP), submission of methods paper.
+\textbf{Dissemination:} Conference poster/talk (EGU) (Months 12--18).
 
 \vspace{0.4em}
 
@@ -437,36 +440,35 @@ uncertainty to isotopic observables.}
 {task:T3}
 
 \textbf{Deliverables:}
-(i) ensemble-based uncertainty quantification framework, %todo
+(i) ensemble-based uncertainty quantification framework, 
 (ii) reproducible analysis notebooks.
 
-\textbf{Dissemination:}
-release of reproducible Jupyter-based analysis pipeline (GitHub).
+\textbf{Dissemination:} ICCP / EGU presentation (Months 18--24).
+    
 \end{tasks}
 
-
+% ==========================================================
 \subsection{Numerical Framework: Particle-Based Implementation}
-
 
 \begin{tasks}
 
 \taskitem
-{Implement and validate isotope-resolved cloud microphysics in idealised
-configurations (box, parcel, one-dimensional column), ensuring exact
-conservation of water mass and consistent isotopic fractionation behaviour
-under limiting analytical cases.}
+{Implement isotope-resolved cloud microphysics in the PySDM framework,
+including vapour, liquid, and ice phases. Ensure mass conservation,
+thermodynamic consistency, and validation against analytical limiting cases.}
 {task:T4}
 
-    \textbf{Deliverables:}
-    (i) validated PySDM-based isotope module (vapour + liquid + ice-ready interface),  
-    (ii) automated unit and regression test suite.
-    \textbf{Dissemination:}
-    Open-source release (GitHub + versioned DOI via Zenodo).
+\textbf{Deliverable:}
+Open-source PySDM isotope module (Zenodo DOI + GitHub release).
+
+\textbf{Dissemination:} EGU demo (Months 12--18).
+
+\vspace{0.5em}
 
 \taskitem
-{Extend particle-based isotopic representation to include multi-isotopologue
-tracing (\ce{HDO}, \ce{H2^{18}O}, \ce{H2^{17}O}) and ice-phase fractionation
-processes, ensuring thermodynamic consistency across all phase transitions.}
+{Develop a minimal isotope-enabled cloud model for controlled numerical
+experiments. The framework isolates key processes controlling isotopic closure,
+including supersaturation variability, mixing, and phase partitioning.}
 {task:T5}
 
     \textbf{Deliverables:}
@@ -475,85 +477,161 @@ processes, ensuring thermodynamic consistency across all phase transitions.}
     (iii) documented API for isotopic particle attributes.
     
     \textbf{Dissemination:}
-    Release of versioned model.
-
-\taskitem
-{Develop a minimal isotope-enabled cloud model that isolates key processes
-controlling isotopic closure, enabling systematic exploration of supersaturation,
-mixing, and phase partitioning effects.}
-{task:T6}
-
-    \textbf{Deliverables:}
-    (i) curated simulation suite for controlled experiments,  
-    (ii) educational and research-ready notebook collection.
-
-    \textbf{Dissemination:}
-    Public repository + tutorial notebooks, presentation at summer school / EGU.
+    Summer school/tutorial release (Months 14--20).
 
 \end{tasks}
 
-
+% ==========================================================
 \subsection{Validation and Closure Assessment}
+
 \begin{tasks}
 
-\taskitem
-{Construct and preprocess observational and laboratory datasets (including CAESAR
-and NCAR experiments), including uncertainty characterization, harmonisation of
-isotopic variables, and mapping to model state variables.}
-{task:T7}
+    \taskitem
+    {Construct and preprocess observational and laboratory datasets (CAESAR,
+    NCAR experiments), including uncertainty characterization and mapping to model
+    state variables.}
+    {task:T6}
+    
+    \textbf{Deliverable:}
+    Curated, model-ready dataset + preprocessing pipeline.
 
-    \textbf{Deliverables:}
-    (i) data assimilation-ready preprocessing pipeline,  
-    (ii) documentation of measurement-model mapping assumptions.
-
-\taskitem
-{Perform quantitative model–observation comparison using statistical diagnostics.}
-{task:T8}
-
-    \textbf{Deliverables:}
-    (i) isotopic closure diagnostic framework,  
-    (ii) reproducible evaluation toolkit.
-
-    \textbf{Dissemination:}
-    Peer-reviewed paper on isotope closure diagnostics/conference presentation.
+\vspace{0.5em}
 
 \taskitem
-{Evaluate the existence and degree of isotopic closure in particle-based cloud
-simulations and identify the minimal physical processes required to reproduce
-observed isotopic signatures.}
-{task:T9}
-
+    {Perform model–observation comparison and evaluate isotopic closure.
+    Identify which microphysical processes are required to reproduce observed
+    isotopic signatures and quantify closure regimes.}
+    {task:T7}
+    
     \textbf{Deliverables:}
     (i) formal closure assessment framework,  
     (ii) classification of closure regimes (closed / partially constrained / unconstrained).
 
-    \textbf{Dissemination:}
-    Peer-reviewed paper on isotope closure,
-    final open-source release of full framework (model + diagnostics + datasets).
+    \textbf{Dissemination:} Peer-reviewed paper on isotope closure,      
+    final open-source release of full framework (model + diagnostics + datasets) (Months 18--24).
+    
 \end{tasks}
 
-
+% ==========================================================
 \subsection*{Milestones}
 
 \begin{itemize}
-\item[\textbf{M1}] Completion of theoretical formulation of isotope-resolved cloud microphysics.
-\item[\textbf{M2}] Implementation and validation of isotope-enabled PySDM framework.
-\item[\textbf{M3}] Integration of observational and experimental datasets.
-\item[\textbf{M4}] Completion of isotopic closure analysis and identification of minimal physical framework.
+
+\item[\textbf{M1}] Completion of theoretical framework for isotope-resolved cloud microphysics
+and identification of governing equations (Month 12).
+
+\item[\textbf{M2}] Completion of numerical implementation in PySDM and validation of isotope tracking
+in idealised simulations (Month 18).
+
+\item[\textbf{M3}] Integration of observational and laboratory datasets with model framework
+and initiation of systematic evaluation (Month 12).
+
+\item[\textbf{M4}] Completion of isotopic closure assessment and identification of minimal physical
+requirements for closure (Month 24).
+
 \end{itemize}
 
+% ==========================================================
 \subsection*{Schedule}
-Tasks are distributed over a 24-month period according 
-to their logical and computational dependencies.
-Early stages focus on theoretical development (A1),
-followed by numerical implementation (A2). 
-Data integration and validation (A3) are initiated
-once core model components are operational,
-enabling iterative refinement through feedback
-between modelling and observational constraints.
 
-The temporal allocation of tasks and milestones
-is presented in the Gantt chart (\ref{fig:gantt}).
+The project is structured over 24 months with strong feedback between theory,
+numerics, and data analysis. Dataset preparation starts early, while closure
+analysis is performed in the final phase.
+
+%\begin{figure}[t]
+%\centering
+%\footnotesize
+%\begin{ganttchart}[
+%    hgrid,
+%    vgrid,
+%    hgrid style/.style={draw=gridgray, line width=0.3pt},
+%    vgrid style/.style={draw=gridgray, line width=0.3pt},
+%    x unit=0.55cm,
+%    y unit chart=0.55cm,
+%    bar height=0.7,
+%    group height=0.8,
+%    milestone height=0.7,
+%    progress label text={},
+%]{1}{24}
+%\ganttset{
+%group/.style={
+%    draw=Aone,
+%    fill=Aone!20,
+%    line width=0.6pt
+%}
+%}
+%\gantttitle{Project Duration (Months)}{24} \\
+%\gantttitlelist{1,...,24}{1} \\
+%
+%%----------------------------------------------------
+%% A1 THEORY
+%%----------------------------------------------------
+%\ganttset{
+%bar/.style={
+%    fill=Aone,
+%    draw=Aone,
+%    line width=0.4pt
+%}
+%}
+%
+%\ganttgroup{\ref{A1} Theory}{1}{12} \\
+%
+%\ganttbar{Task \ref{task:T1}}{1}{6} \\
+%\ganttbar{Task \ref{task:T2}}{4}{10} \\
+%\ganttbar{Task \ref{task:T3}}{7}{20} \\
+%
+%\ganttmilestone{M1 Theory framework}{6} \\
+%
+%%----------------------------------------------------
+%% A2 NUMERICS
+%%----------------------------------------------------
+%\ganttset{
+%bar/.style={
+%    fill=Atwo,
+%    draw=Atwo,
+%    line width=0.4pt
+%}
+%}
+%
+%\ganttgroup{\ref{A2} Numerics}{3}{20} \\
+%
+%\ganttbar{Task \ref{task:T4}}{3}{10} \\
+%\ganttbar{Task \ref{task:T5}}{8}{16} \\
+%\ganttbar{Task \ref{task:T6}}{10}{20} \\
+%
+%\ganttmilestone{M2 Numerical framework}{12} \\
+%
+%%----------------------------------------------------
+%% A3 VALIDATION
+%%----------------------------------------------------
+%\ganttset{
+%bar/.style={
+%    fill=Athree,
+%    draw=Athree,
+%    line width=0.4pt
+%}
+%}
+%
+%\ganttgroup{\ref{A3} Data}{3}{24} \\
+%
+%\ganttbar{Task \ref{task:T7}}{3}{12} \\
+%\ganttbar{Task \ref{task:T8}}{10}{22} \\
+%\ganttbar{Task \ref{task:T9}}{14}{24} \\
+%
+%\ganttmilestone{M3 Data integration}{16} \\
+%\ganttmilestone{M4 Closure assessment}{24}
+%
+%\end{ganttchart}
+%
+%
+%
+%\caption{
+%Project timeline structured into three work packages:
+%\ref{A1} theoretical development, \ref{A2} numerical implementation,
+%and \ref{A3} validation and closure assessment.
+%}
+%\label{fig:gantt}
+%\end{figure}
 
 \begin{figure}[t]
 \centering
@@ -570,6 +648,7 @@ is presented in the Gantt chart (\ref{fig:gantt}).
     milestone height=0.7,
     progress label text={},
 ]{1}{24}
+
 \ganttset{
 group/.style={
     draw=Aone,
@@ -577,12 +656,11 @@ group/.style={
     line width=0.6pt
 }
 }
+
 \gantttitle{Project Duration (Months)}{24} \\
 \gantttitlelist{1,...,24}{1} \\
 
-%----------------------------------------------------
-% A1 THEORY
-%----------------------------------------------------
+% ===================== A1 THEORY =====================
 \ganttset{
 bar/.style={
     fill=Aone,
@@ -591,17 +669,15 @@ bar/.style={
 }
 }
 
-\ganttgroup{\ref{A1} Theory}{1}{12} \\
+\ganttgroup{\ref{A1} Theory}{1}{18} \\
 
-\ganttbar{Task \ref{task:T1}}{1}{6} \\
-\ganttbar{Task \ref{task:T2}}{4}{10} \\
-\ganttbar{Task \ref{task:T3}}{7}{20} \\
+\ganttbar{Task \ref{task:T1}}{1}{8} \\
+\ganttbar{Task \ref{task:T2}}{4}{12} \\
+\ganttbar{Task \ref{task:T3}}{10}{18} \\
 
-\ganttmilestone{M1 Theory framework}{6} \\
+\ganttmilestone{M1 Theory framework}{12} \\
 
-%----------------------------------------------------
-% A2 NUMERICS
-%----------------------------------------------------
+% ===================== A2 NUMERICS =====================
 \ganttset{
 bar/.style={
     fill=Atwo,
@@ -610,17 +686,14 @@ bar/.style={
 }
 }
 
-\ganttgroup{\ref{A2} Numerics}{3}{20} \\
+\ganttgroup{\ref{A2} Numerics}{4}{18} \\
 
-\ganttbar{Task \ref{task:T4}}{3}{10} \\
-\ganttbar{Task \ref{task:T5}}{8}{16} \\
-\ganttbar{Task \ref{task:T6}}{10}{20} \\
+\ganttbar{Task \ref{task:T4}}{4}{12} \\
+\ganttbar{Task \ref{task:T5}}{10}{18} \\
 
-\ganttmilestone{M2 Numerical framework}{12} \\
+\ganttmilestone{M2 Numerical framework}{18} \\
 
-%----------------------------------------------------
-% A3 VALIDATION
-%----------------------------------------------------
+% ===================== A3 VALIDATION =====================
 \ganttset{
 bar/.style={
     fill=Athree,
@@ -629,27 +702,22 @@ bar/.style={
 }
 }
 
-\ganttgroup{\ref{A3} Data}{3}{24} \\
+\ganttgroup{\ref{A3} Data}{5}{24} \\
 
-\ganttbar{Task \ref{task:T7}}{3}{12} \\
-\ganttbar{Task \ref{task:T8}}{10}{22} \\
-\ganttbar{Task \ref{task:T9}}{14}{24} \\
+\ganttbar{Task \ref{task:T6}}{5}{12} \\
+\ganttbar{Task \ref{task:T7}}{10}{24} \\
 
-\ganttmilestone{M3 Data integration}{16} \\
+\ganttmilestone{M3 Data integration}{12} \\
 \ganttmilestone{M4 Closure assessment}{24}
 
 \end{ganttchart}
 
-
-
 \caption{
 Project timeline structured into three work packages:
-\ref{A1} theoretical development, \ref{A2} numerical implementation,
-and \ref{A3} validation and closure assessment.
+\ref{A1}, \ref{A2}, and \ref{A3}.
 }
 \label{fig:gantt}
 \end{figure}
-
 
 \subsection*{Result dissemination}
 Project results will be disseminated through peer-reviewed publication,
