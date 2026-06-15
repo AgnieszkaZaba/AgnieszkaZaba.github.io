@@ -525,3 +525,26 @@ W zadaniach - te same pytania/komentarz, które zadawałem wcześniej:
 
 w CV:
 - w "research achievement" są rzeczy, które wielu recenzentów może uznać za "nie research", myślę że lepiej tam się pochwalić zaproponowaniem i sformułowaniem liczby Bolina
+
+Please list below ongoing and completed research tasks, which might be deemed double funding, if this proposal is successful. The explanation should specify the differences between similar research tasks and provide justification of the need to fund the research tasks included in the proposal.
+
+Previous NCN grant (2026-05-31):
+Title in Polish: Modelowanie składu izotopowego opadów atmosferycznych przy użyciu lagranżowskiej reprezentacji mikrofizyki chmur
+Title in English: Modelling isotopic signatures in precipitation using particle-based cloud microphysics
+Registration number: 2020/39/D/ST10/01220
+
+PI participated in the NCN-funded project 
+"Modelling isotopic signatures in precipitation using particle-based cloud microphysics/Modelowanie składu izotopowego opadów atmosferycznych przy użyciu lagranżowskiej reprezentacji mikrofizyki chmur"
+(grant no. 2020/39/D/ST10/01220, completed in 31st of May 2026), 
+which involved the development of particle-based cloud microphysics modelling
+tools within the PySDM framework.
+
+The following completed research tasks may be considered related to the present proposal:
+1. Development and implementation of a PySDM module for calculating isotopic fractionation timescales in clouds. The work included implementation of isotope-specific theoretical equations, modification of the PySDM architecture, preparation of software documentation, and integration of the new functionality into a development version of the model.
+2. Development of an analytical model of isotopic fractionation in cloud droplets based on dynamical-systems theory. This work led to the introduction of the dimensionless Bolin number describing the relationship between isotopologue mass evolution and total droplet mass evolution. The formulation was implemented in PySDM and verified using analytical solutions and preliminary numerical tests.
+
+Although the previous project and the present proposal both concern isotopic processes in clouds and use the PySDM framework, their objectives differ substantially. The completed tasks focused on theoretical and methodological development and resulted in a proof-of-concept implementation. No cloud simulations, sensitivity analyses, uncertainty quantification studies, or comparisons with observational datasets were performed, and the software was not yet developed to a stage enabling systematic scientific applications.
+
+The proposed project aims to develop a complete isotope-enabled mixed-phase cloud modelling framework and apply it to the problem of isotopic closure in cloud systems. Planned activities include implementation of ice-phase processes, execution of numerical simulations, uncertainty quantification, sensitivity analysis, and validation against aircraft and laboratory observations. These objectives were outside the scope of the previous project and require substantial additional theoretical, numerical, and observational work.
+
+Therefore, the proposed research does not duplicate previously funded activities but builds upon preliminary methodological developments obtained within the earlier project.
