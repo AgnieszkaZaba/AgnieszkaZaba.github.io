@@ -1,16 +1,14 @@
 ---
 permalink: /
-title: "AgnieszkaZaba webpage"
+title: "Hi! I'm Aga"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-# Webpage under construction...
-
-## Hi! I'm Aga
 I am a PhD student in the [Environmental Physics Group](https://zfs.agh.edu.pl/en) at [AGH University of Krakow](https://www.fis.agh.edu.pl/en) 🇵🇱.\
+I am a member of the [open-atmos-krk](https://open-atmos-krk.github.io) group.
 My research focuses on cloud microphysics. ☁️💧⚛️ 
 
 🇵🇱: Agnieszka Żaba doktorantka i pracowniczka 
