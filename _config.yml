@@ -23,14 +23,26 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  avatar           : "AgnieszkaZaba.png"
+  name             : "Agnieszka Żaba"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "
+I am a doctoral student in the AGH
+Environmental Physics Group.
+My research focuses on cloud
+microphysics modelling and climate-
+science applications of stable wa-
+ter isotopes. Research software
+engineering is a key part of my
+work. As an active member of the
+github.com/open-atmos commu-
+nity, I maintain the PySDM and the
+open-atmos-jupyter-utils
+Python packages"
+  location         : "Kraków, Poland"
+  employer         : "AGH University of Krakow"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "azaba@agh.edu.pl"
 
   # Academic websites
   academia         : # URL
