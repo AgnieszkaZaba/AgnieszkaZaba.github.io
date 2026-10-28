@@ -7,11 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student in the [Environmental Physics Group](https://zfs.agh.edu.pl/en) at [AGH University of Krakow](https://www.fis.agh.edu.pl/en) 🇵🇱.\
+I am a PhD student in the [Environmental Physics Group](https://zfs.agh.edu.pl/en) at [AGH University of Krakow](https://www.fis.agh.edu.pl/en).\
 I am a member of the [open-atmos-krk](https://open-atmos-krk.github.io) group.
-My research focuses on cloud microphysics. ☁️💧⚛️ 
+My research focuses on cloud microphysics. 
 
-🇵🇱: Agnieszka Żaba doktorantka i pracowniczka 
+🇵🇱 Agnieszka Żaba doktorantka i pracowniczka 
 na Wydziale Fizyki i Informatyki Stosowanej 
 w Zespole Fizyki Środowiska (AGH).
 
@@ -26,6 +26,6 @@ w Zespole Fizyki Środowiska (AGH).
 I'm trying to do my best :)
 
 Contact me:
-`azaba[at]agh.edu.pl` or §
+`azaba[at]agh.edu.pl` or 
 `zabcia.aga[at]gmail.com`
 
