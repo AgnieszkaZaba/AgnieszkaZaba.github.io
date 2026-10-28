@@ -113,10 +113,6 @@
 .#{$fa-css-prefix}.#{$fa-css-prefix}-arrows-h { #{$fa-icon-property}: unquote("\"#{ $fa-var-left-right }\""); }
 .#{$fa-css-prefix}.#{$fa-css-prefix}-bar-chart { #{$fa-icon-property}: unquote("\"#{ $fa-var-chart-column }\""); }
 .#{$fa-css-prefix}.#{$fa-css-prefix}-bar-chart-o { #{$fa-icon-property}: unquote("\"#{ $fa-var-chart-column }\""); }
-.#{$fa-css-prefix}.#{$fa-css-prefix}-twitter-square {
-  font-family: 'Font Awesome 6 Brands';
-  font-weight: 400;
-}
 
 .#{$fa-css-prefix}.#{$fa-css-prefix}-gears { #{$fa-icon-property}: unquote("\"#{ $fa-var-gears }\""); }
 .#{$fa-css-prefix}.#{$fa-css-prefix}-thumbs-o-up {
@@ -163,10 +159,6 @@
   font-weight: 400;
 }
 .#{$fa-css-prefix}.#{$fa-css-prefix}-bookmark-o { #{$fa-icon-property}: unquote("\"#{ $fa-var-bookmark }\""); }
-.#{$fa-css-prefix}.#{$fa-css-prefix}-twitter {
-  font-family: 'Font Awesome 6 Brands';
-  font-weight: 400;
-}
 
 .#{$fa-css-prefix}.#{$fa-css-prefix}-github {
   font-family: 'Font Awesome 6 Brands';
@@ -494,10 +486,7 @@
   font-family: 'Font Awesome 6 Brands';
   font-weight: 400;
 }
-.#{$fa-css-prefix}.#{$fa-css-prefix}-flickr {
-  font-family: 'Font Awesome 6 Brands';
-  font-weight: 400;
-}
+
 .#{$fa-css-prefix}.#{$fa-css-prefix}-adn {
   font-family: 'Font Awesome 6 Brands';
   font-weight: 400;
