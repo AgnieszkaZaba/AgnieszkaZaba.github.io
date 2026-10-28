@@ -500,15 +500,6 @@
   font-weight: 400;
 }
 .#{$fa-css-prefix}.#{$fa-css-prefix}-bitbucket-square { #{$fa-icon-property}: unquote("\"#{ $fa-var-bitbucket }\""); }
-.#{$fa-css-prefix}.#{$fa-css-prefix}-tumblr {
-  font-family: 'Font Awesome 6 Brands';
-  font-weight: 400;
-}
-.#{$fa-css-prefix}.#{$fa-css-prefix}-tumblr-square {
-  font-family: 'Font Awesome 6 Brands';
-  font-weight: 400;
-}
-.#{$fa-css-prefix}.#{$fa-css-prefix}-tumblr-square { #{$fa-icon-property}: unquote("\"#{ $fa-var-square-tumblr }\""); }
 .#{$fa-css-prefix}.#{$fa-css-prefix}-long-arrow-down { #{$fa-icon-property}: unquote("\"#{ $fa-var-down-long }\""); }
 .#{$fa-css-prefix}.#{$fa-css-prefix}-long-arrow-up { #{$fa-icon-property}: unquote("\"#{ $fa-var-up-long }\""); }
 .#{$fa-css-prefix}.#{$fa-css-prefix}-long-arrow-left { #{$fa-icon-property}: unquote("\"#{ $fa-var-left-long }\""); }
