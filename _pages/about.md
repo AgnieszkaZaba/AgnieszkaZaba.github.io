@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hi! I'm Aga"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/
