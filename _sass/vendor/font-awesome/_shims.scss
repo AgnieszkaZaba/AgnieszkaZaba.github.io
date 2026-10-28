@@ -117,12 +117,7 @@
   font-family: 'Font Awesome 6 Brands';
   font-weight: 400;
 }
-.#{$fa-css-prefix}.#{$fa-css-prefix}-twitter-square { #{$fa-icon-property}: unquote("\"#{ $fa-var-square-twitter }\""); }
-.#{$fa-css-prefix}.#{$fa-css-prefix}-facebook-square {
-  font-family: 'Font Awesome 6 Brands';
-  font-weight: 400;
-}
-.#{$fa-css-prefix}.#{$fa-css-prefix}-facebook-square { #{$fa-icon-property}: unquote("\"#{ $fa-var-square-facebook }\""); }
+
 .#{$fa-css-prefix}.#{$fa-css-prefix}-gears { #{$fa-icon-property}: unquote("\"#{ $fa-var-gears }\""); }
 .#{$fa-css-prefix}.#{$fa-css-prefix}-thumbs-o-up {
   font-family: 'Font Awesome 6 Free';
@@ -172,16 +167,7 @@
   font-family: 'Font Awesome 6 Brands';
   font-weight: 400;
 }
-.#{$fa-css-prefix}.#{$fa-css-prefix}-facebook {
-  font-family: 'Font Awesome 6 Brands';
-  font-weight: 400;
-}
-.#{$fa-css-prefix}.#{$fa-css-prefix}-facebook { #{$fa-icon-property}: unquote("\"#{ $fa-var-facebook-f }\""); }
-.#{$fa-css-prefix}.#{$fa-css-prefix}-facebook-f {
-  font-family: 'Font Awesome 6 Brands';
-  font-weight: 400;
-}
-.#{$fa-css-prefix}.#{$fa-css-prefix}-facebook-f { #{$fa-icon-property}: unquote("\"#{ $fa-var-facebook-f }\""); }
+
 .#{$fa-css-prefix}.#{$fa-css-prefix}-github {
   font-family: 'Font Awesome 6 Brands';
   font-weight: 400;
@@ -1051,11 +1037,6 @@
 .#{$fa-css-prefix}.#{$fa-css-prefix}-transgender { #{$fa-icon-property}: unquote("\"#{ $fa-var-mars-and-venus }\""); }
 .#{$fa-css-prefix}.#{$fa-css-prefix}-intersex { #{$fa-icon-property}: unquote("\"#{ $fa-var-mars-and-venus }\""); }
 .#{$fa-css-prefix}.#{$fa-css-prefix}-transgender-alt { #{$fa-icon-property}: unquote("\"#{ $fa-var-transgender }\""); }
-.#{$fa-css-prefix}.#{$fa-css-prefix}-facebook-official {
-  font-family: 'Font Awesome 6 Brands';
-  font-weight: 400;
-}
-.#{$fa-css-prefix}.#{$fa-css-prefix}-facebook-official { #{$fa-icon-property}: unquote("\"#{ $fa-var-facebook }\""); }
 .#{$fa-css-prefix}.#{$fa-css-prefix}-pinterest-p {
   font-family: 'Font Awesome 6 Brands';
   font-weight: 400;
