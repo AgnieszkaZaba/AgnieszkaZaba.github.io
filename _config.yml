@@ -27,18 +27,12 @@ author:
   name             : "Agnieszka Żaba"
   pronouns         : # example: "she/her"  
   bio              : "
-I am a doctoral student in the AGH
-Environmental Physics Group.
-My research focuses on cloud
-microphysics modelling and climate-
-science applications of stable wa-
-ter isotopes. Research software
-engineering is a key part of my
-work. As an active member of the
-github.com/open-atmos commu-
-nity, I maintain the PySDM and the
-open-atmos-jupyter-utils
-Python packages"
+I am a doctoral student in the AGH Environmental Physics Group.
+My research focuses on cloud microphysics modelling
+ and climate-science applications of stable water isotopes.
+Research software engineering is a key part of my work. 
+As an active member of the github.com/open-atmos community, I maintain the PySDM and the
+open-atmos-jupyter-utils Python packages"
   location         : "Kraków, Poland"
   employer         : "AGH University of Krakow"
   uri              : # URL
