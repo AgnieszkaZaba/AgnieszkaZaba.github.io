@@ -9,5 +9,8 @@ location: "Kraków"
 ---
 
 Zajęcia laboratoryjne dla Fizyki Technicznej, sem. 7
+
 Konsultacje odbywają się w środy od 12:15 do 13:00 w pokoju 7, D-10.
-Można umówić się na inny termin - proszę o kontakt mailowy.
+Można umówić się na inny termin --- proszę o kontakt mailowy.
+
+**[Materiały na GitHub](https://github.com/AgnieszkaZaba/Procesy-transportu)**
